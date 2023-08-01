@@ -3,7 +3,7 @@
 from json import loads, JSONDecoder
 from datetime import date, datetime
 
-from ...Serializer import Serializer
+from Liquirizia.Serializer import Serializer
 
 __all__ = (
 	'Decoder'
@@ -11,9 +11,7 @@ __all__ = (
 
 
 class TypeDecoder(JSONDecoder):
-	"""
-	Type Decoder for JSON
-	"""
+	"""Type Decoder for JSON"""
 	
 	def __init__(self, *args, **kwargs):
 		super(TypeDecoder, self).__init__(object_hook=self.any, *args, **kwargs)
@@ -50,9 +48,7 @@ class TypeDecoder(JSONDecoder):
 	
 
 class Decoder(Serializer):
-	"""
-	Decoder Class for JSON
-	"""
+	"""Decoder Class for JSON"""
 	
 	def __call__(self, obj):
 		if not isinstance(obj, str):
