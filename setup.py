@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 PKG = 'Liquirizia.Serializer.Implements.JavaScriptObjectNotation'
 SRC = 'src'
 EXCLUDES = []
-DESC = 'JSON(JavaScript Object Notation) Serializer of Python Modernized Application Framework Liquirizia'
+DESC = 'JSON(JavaScript Object Notation) Serializer of Liquirizia'
 WHO = 'Heo Yongseon'
 
 PKGS = [PKG]
@@ -29,9 +29,9 @@ setup(
 		'Programming Language :: Python :: 3.9',
 		'Programming Language :: Python :: 3.10',
 		'Programming Language :: Python :: 3.11',
-		'Application Framework :: Liquirizia',
-		'Application Framework :: Liquirizia :: Serializer',
-		'Application Framework :: Liquirizia :: Serializer :: JavaScriptObjectNotation',
+		'Liquirizia',
+		'Liquirizia :: Serializer',
+		'Liquirizia :: Serializer :: JavaScriptObjectNotation',
 	],
 	install_requires=[
 		'Liquirizia@git+https://github.com/yong5eon/Liquirizia.git',
